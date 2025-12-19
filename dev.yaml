@@ -1,0 +1,25 @@
+trigger:
+  branches:
+    include:
+      - main
+      - features/*
+
+name: infra
+pool: infra
+stages:
+  - stage:
+    jobs:
+      - job: 
+        steps:
+          - task: TerraformTask@5
+            inputs:
+              provider: 'azurerm'
+              command: 'init'
+          - task: TerraformTask@5
+            inputs:
+              provider: 'azurerm'
+              command: 'plan'
+          - task: TerraformTask@5
+            inputs:
+              provider: 'azurerm'
+              command: 'apply'
