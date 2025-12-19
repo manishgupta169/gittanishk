@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "NIC"
+		},
+		{
+			"path": "provider"
+		},
+		{
+			"path": "Public_ip"
+		},
+		{
+			"path": "Resource_group"
+		},
+		{
+			"path": "Subnet"
+		},
+		{
+			"path": "VM"
+		},
+		{
+			"path": "Vnet"
+		}
+	]
+}
